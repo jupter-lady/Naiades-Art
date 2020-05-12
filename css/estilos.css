@@ -1,0 +1,20 @@
+body{background-color:#505040;}
+.menu{
+ background-color: whitesmoke;
+  
+}
+a {color:black;
+text-decoration:none;}
+.menu ul {display:flex;
+  justify-content: space-around;
+}
+.menu li{list-style:none;}
+a:hover{text-decoration:underline;
+color:blue;}
+.subtitulo,
+.nome{
+  color:whitesmoke;
+  text-align: center;
+}
+.subtitulo{font-style:italic;}
+.nome{background-color: #606050;}
