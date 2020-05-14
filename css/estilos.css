@@ -1,9 +1,42 @@
-body{background-color:#505040;}
+/*reset */
+
+* {margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{background-image: url('../Primeiros desenhos/fundo.png');
+  background-size:100vw auto}
+@media (min-width: 0) {
+  body{ 
+  font-size: 10px;}
+}
+@media (min-width:1100px){
+  body {
+font-size: 15px;
+background-size: 100vw auto;
+
+  }
+  div{block-size: 400px;
+  padding-top: 100px;}
+}
+header {height: 100vh;
+  display: flex;
+justify-content: center;
+align-items: center;}
 .menu{
  background-color: whitesmoke;
+ position: fixed;
+ width: 100vw;
+ top: 0;
+ font-size: 2em;
   
 }
+
 a {color:black;
+  display: block;
+  padding:10px 40px;
+  background-color:aquamarine;
 text-decoration:none;}
 .menu ul {display:flex;
   justify-content: space-around;
@@ -11,10 +44,17 @@ text-decoration:none;}
 .menu li{list-style:none;}
 a:hover{text-decoration:underline;
 color:blue;}
-.subtitulo,
-.nome{
+div{
   color:whitesmoke;
   text-align: center;
+  background-color: #808070;
+  box-shadow: 10px 10px 10px #303020;
+  font-size: 3em;
+ 
+  
+  
+  
 }
 .subtitulo{font-style:italic;}
-.nome{background-color: #606050;}
+.nome{text-decoration: underline;}
+
