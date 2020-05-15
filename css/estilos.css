@@ -7,22 +7,24 @@
 
 body{background-color:grey;
   font-family: 'PT Mono', monospace;
+  /*uma font-family pode ser obtida em sites como o google fontes, de graça com o código já pronto para colocar no html abaixo do link com o css*/
   font-size: 12px;
   }
   /*se a tela tiver uma largura maior que:*/
   @media (min-width:400px){
     body{font-size:14px}
   }
+  /*breakpoint*/
   @media (min-width:600px){
     body{font-size: 20px;}
   }
+  /*o @media é uma forma de deixar o site responsivo a diversos dispositivos*/
   @media (min-width:800px){
     body{font-size: 24px;}
   }
   @media (min-width:1000px){
     body{font-size: 20px;
-    }
-    
+    }    
   }
 header {height: 100vh;
   display: flex;
@@ -33,8 +35,10 @@ background-size: auto 100vh;}
 .menu{
  background-color: whitesmoke;
  position: fixed;
+ /*o position fixed mantém o elemento sobre os outros, fixado na tela como uma terceira dimensão*/
  width: 100vw;
  top: 0;
+/*o comando top funciona apenas com um position declarado*/
 }
 /*font-family: 'Amatic SC', cursive;
 font-family: 'Coming Soon', cursive;
@@ -45,19 +49,23 @@ a {color:black;
   padding:10px 20px;
   background-color:aquamarine;
 text-decoration:none;
-font-family: 'Amatic SC', cursive;}
+font-family: 'Amatic SC', cursive;
+font-size:2em;}
+/*atinge os elementos dentro de um ul  dentro de um elemento nav com class=menu*/
 .menu ul {display:flex;
   justify-content: space-around;
 }
+/*o display flex transforma todos os elementos dentro da tag que ele atinge em colunas*/
 .menu li{list-style:none;}
 a:hover{text-decoration:underline;
 color:blue;}
 div{
   color:whitesmoke;
   text-align: center;
-  background-color: #808070;
+  background-color: #808080;
   box-shadow: 10px 10px 10px #303030;
   padding: 40px 40px;
+  align-content: center;
 }
 .subtitulo{
 font-size:2em;
@@ -65,4 +73,5 @@ font-family: 'Coming Soon', cursive;}
 .nome{text-decoration: underline;
 font-size:4em;
 font-family: 'Times New Roman', Times, serif;}
-
+/*width pode ser um tamanho relativo com a unidade de medida vw, sendo uma espécie de porcentagem quanto ao valor do viewport-width, ou seja a largura da tela*/
+/*heigth pode ser um tamanho relativo com a unidade de medida vh, sendo uma espécie de porcentagem quanto ao valor do viewport-heigth, ou seja a altura da tela */
